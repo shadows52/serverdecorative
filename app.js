@@ -71,7 +71,7 @@ app.use('/', appRoutes);
 
 
 //escuchar peticiones
-const port = process.env.PORT || 3400;
+// const port = process.env.PORT || 3400;
 app.listen(8080, () => {
     console.log('express server corriendo en el puerto 8080' + ' \x1b[32m%s\x1b[0m', 'online');
 });
