@@ -3,10 +3,10 @@ require('./config/config');
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const aws = require('aws-sdk');
+// const aws = require('aws-sdk');
 //inicializar variables
 
-// const app = express();
+const app = express();
 
 // const S3_BUCKET = process.env.S3_BUCKET;
 // aws.config.region = 'eu-west-1';
