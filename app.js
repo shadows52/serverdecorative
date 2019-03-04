@@ -6,10 +6,10 @@ const bodyParser = require('body-parser');
 const aws = require('aws-sdk');
 //inicializar variables
 
-const app = express();
+// const app = express();
 
-const S3_BUCKET = process.env.S3_BUCKET;
-aws.config.region = 'eu-west-1';
+// const S3_BUCKET = process.env.S3_BUCKET;
+// aws.config.region = 'eu-west-1';
 //configuracion de cabezeras
 
 //CORS
@@ -72,6 +72,6 @@ app.use('/', appRoutes);
 
 //escuchar peticiones
 const port = process.env.PORT || 3400;
-app.listen(port, () => {
-    console.log('express server corriendo en el puerto ' + port + ' \x1b[32m%s\x1b[0m', 'online');
+app.listen(8080, () => {
+    console.log('express server corriendo en el puerto ' + 8080 + ' \x1b[32m%s\x1b[0m', 'online');
 });
